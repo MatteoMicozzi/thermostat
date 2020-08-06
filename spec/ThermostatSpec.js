@@ -15,8 +15,20 @@ describe('Thermostat', function() {
     it('cannot raise temperature above maximum of 25 degrees', function() {
       termos.temperature = 25
       termos.up();
-      expect(termos.temperature).toEqual(25)
-    })
+      expect(termos.temperature).toEqual(25);
+    });
+    it('can go above 25 degrees with PSM off', function() {
+      termos.temperature = 25;
+      termos.powerSavingOff();
+      termos.up();
+      expect(termos.temperature).toEqual(26);
+    });
+    it('cannot go above 32 degrees with PSM off', function() {
+      termos.powerSavingOff();
+      termos.temperature = 32;
+      termos.up();
+      expect(termos.temperature).toEqual(32);
+    });
   });
   describe('#down', function() {
     it('lower the temperature', function() {
