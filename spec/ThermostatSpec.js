@@ -16,6 +16,12 @@ describe('Thermostat', function() {
       let termos = new Thermostat;
       termos.down();
       expect(termos.temperature).toEqual(19);
-    })
-  })
+    });
+    it('dont go lower then 10', function() {
+      let termos = new Thermostat;
+      termos.temperature = 10;
+      termos.down();
+      expect(termos.temperature).toEqual(10);
+    });
+  });
 });
