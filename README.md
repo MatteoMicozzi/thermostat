@@ -1,10 +1,15 @@
 - Thermostat starts at 20 degrees
-
+```
 As a User
 So that a User have a room in a certain temperature
 I want a thermostat at a default temperature
-
+```
 You can increase the temperature with an up function
+```
+As a User
+So that I can warm up
+I want to be able to raise the temperature
+```
 You can decrease the temperature with a down function
 The minimum temperature is 10 degrees
 If power saving mode is on, the maximum temperature is 25 degrees
