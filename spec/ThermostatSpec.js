@@ -12,6 +12,11 @@ describe('Thermostat', function() {
       termos.up();
       expect(termos.temperature).toEqual(21);
     });
+    it('cannot raise temperature above maximum of 25 degrees', function() {
+      termos.temperature = 25
+      termos.up();
+      expect(termos.temperature).toEqual(25)
+    })
   });
   describe('#down', function() {
     it('lower the temperature', function() {

@@ -26,7 +26,7 @@ If power saving mode is on, the maximum temperature is 25 degrees
 ```
 As a User
 So that I can save energy
-I would like a maximum temperature of 25 degrees
+I would like a maximum temperature of 25 degrees when PSM is on
 ```
 If power saving mode is off, the maximum temperature is 32 degrees
 ```
