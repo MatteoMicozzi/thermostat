@@ -23,7 +23,17 @@ So that the room is already cold enough
 I can't go lower then 10 degree
 ```
 If power saving mode is on, the maximum temperature is 25 degrees
+```
+As a User
+So that I can save energy
+I would like a maximum temperature of 25 degrees
+```
 If power saving mode is off, the maximum temperature is 32 degrees
+```
+As a User
+So that I can have control over the maximum temperature
+I want to be able to switch off power saving mode (and raise the temperature up to 32 degrees)
+```
 Power saving mode is on by default but it can also be turned off
 You can reset the temperature to 20 with a reset function
 You can ask about the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage.
